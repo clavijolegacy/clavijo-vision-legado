@@ -1,0 +1,273 @@
+* { box-sizing: border-box; }
+
+:root {
+  --navy: #06264a;
+  --deep: #03172d;
+  --gold: #d7ad4f;
+  --cream: #f8f3ea;
+  --white: #ffffff;
+  --text: #102033;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--cream);
+}
+
+a { color: inherit; text-decoration: none; }
+
+.hero {
+  min-height: 100vh;
+  padding: 28px 7% 72px;
+  background:
+    radial-gradient(circle at top right, rgba(215,173,79,.25), transparent 28%),
+    linear-gradient(135deg, #ffffff 0%, #fbf7ef 50%, #edf3f6 100%);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.ffl-logo {
+  max-width: 230px;
+  width: 42vw;
+  height: auto;
+}
+
+.nav-btn {
+  padding: 12px 20px;
+  border: 2px solid var(--gold);
+  border-radius: 999px;
+  background: rgba(255,255,255,.88);
+  font-weight: 900;
+  color: var(--deep);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 46px;
+  padding-top: 52px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: .82rem;
+}
+
+h1 {
+  color: var(--deep);
+  font-size: clamp(3.1rem, 7vw, 6.4rem);
+  line-height: .9;
+  margin: 12px 0 4px;
+  text-transform: uppercase;
+}
+
+.hero h2 {
+  color: var(--navy);
+  font-size: clamp(1.25rem, 2.2vw, 2rem);
+  margin: 0 0 24px;
+}
+
+.lead {
+  font-size: clamp(1.55rem, 3vw, 2.6rem);
+  line-height: 1.08;
+  color: var(--deep);
+  font-weight: 900;
+  max-width: 780px;
+  margin: 0 0 14px;
+}
+
+.sublead {
+  font-size: 1.18rem;
+  line-height: 1.55;
+  max-width: 680px;
+}
+
+.buttons, .contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.btn, button {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 999px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+}
+
+.primary, button {
+  background: linear-gradient(135deg, var(--gold), #f1d17b);
+  color: var(--deep);
+  box-shadow: 0 12px 28px rgba(3,23,45,.16);
+}
+
+.secondary {
+  background: white;
+  border: 2px solid var(--gold);
+  color: var(--deep);
+}
+
+.light {
+  border: 2px solid var(--gold);
+  color: white;
+}
+
+.badges {
+  margin-top: 28px;
+  display: grid;
+  gap: 12px;
+  max-width: 520px;
+}
+
+.badges span {
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.88);
+  border: 1px solid rgba(215,173,79,.55);
+  font-weight: 900;
+}
+
+.photo-card img {
+  width: 100%;
+  max-height: 760px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 36px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.22);
+}
+
+.section {
+  padding: 84px 7%;
+  background: white;
+}
+
+.section h2 {
+  color: var(--deep);
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  margin: 0 0 26px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #fbfaf7;
+  border: 1px solid rgba(215,173,79,.38);
+  border-radius: 26px;
+  padding: 28px;
+}
+
+.icon { font-size: 2.1rem; }
+.card h3 { color: var(--navy); }
+.card p, .bio p, .contact p { line-height: 1.6; font-size: 1.04rem; }
+
+.bio {
+  display: grid;
+  grid-template-columns: 1.1fr .75fr;
+  gap: 38px;
+  align-items: center;
+  background: var(--cream);
+}
+
+.bio-card {
+  background: var(--deep);
+  color: white;
+  border: 3px solid var(--gold);
+  border-radius: 30px;
+  padding: 38px;
+  box-shadow: 0 20px 55px rgba(0,0,0,.14);
+}
+
+.bio-card h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.bio-card ul {
+  padding-left: 20px;
+  line-height: 1.9;
+  font-weight: 800;
+}
+
+.contact {
+  text-align: center;
+  background: linear-gradient(135deg, var(--deep), var(--navy));
+  color: white;
+}
+
+.contact h2 { color: white; }
+.footer-logo {
+  max-width: 220px;
+  width: 48vw;
+  margin-bottom: 22px;
+  background: white;
+  padding: 16px;
+  border-radius: 18px;
+}
+
+.contact-buttons { justify-content: center; }
+
+.form {
+  max-width: 650px;
+  margin: 34px auto 0;
+  display: grid;
+  gap: 14px;
+}
+
+input, select {
+  width: 100%;
+  padding: 16px 18px;
+  border: none;
+  border-radius: 16px;
+  font-size: 1rem;
+}
+
+footer {
+  background: #020f20;
+  color: white;
+  text-align: center;
+  padding: 36px 7%;
+}
+
+footer a { color: var(--gold); }
+
+@media (max-width: 980px) {
+  .hero-grid, .cards, .bio {
+    grid-template-columns: 1fr;
+  }
+  .photo-card img {
+    max-height: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero { padding: 22px 6% 55px; }
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .ffl-logo {
+    width: 230px;
+  }
+  .buttons .btn, .contact-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
