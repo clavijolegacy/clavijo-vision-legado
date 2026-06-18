@@ -267,52 +267,37 @@ h1 {
   border-color: var(--navy);
 }
 
-.shield::before {
-  width: 24px; height: 29px; left: 13px; top: 9px;
-  border: 2px solid var(--navy);
-  border-radius: 14px 14px 18px 18px;
-}
 .shield::after {
-  width: 12px; height: 2px; left: 20px; top: 24px;
-  background: var(--gold);
+content: "👨‍👩‍👧";
+left: 8px;
+top: 10px;
+font-size: 20px;
+border: none;
 }
 
-.growth::before {
-  width: 29px; height: 24px; left: 12px; top: 15px;
-  border-left: 2px solid var(--navy);
-  border-bottom: 2px solid var(--navy);
-}
 .growth::after {
-  width: 26px; height: 26px; left: 17px; top: 9px;
-  border-top: 2px solid var(--gold);
-  border-right: 2px solid var(--gold);
-  transform: rotate(-12deg);
+content: "💰";
+left: 12px;
+top: 8px;
+font-size: 24px;
+border: none;
 }
 
-.home::before {
-  width: 28px; height: 20px; left: 12px; top: 22px;
-  border: 2px solid var(--navy);
-  border-top: 0;
-}
 .home::after {
-  width: 24px; height: 24px; left: 15px; top: 10px;
-  border-left: 2px solid var(--gold);
-  border-top: 2px solid var(--gold);
-  transform: rotate(45deg);
+content: "⚜️";
+left: 16px;
+top: 10px;
+font-size: 24px;
+color: var(--navy);
+border: none;
 }
 
-.income::before {
-  width: 30px; height: 30px; left: 11px; top: 11px;
-  border: 2px solid var(--navy);
-  border-radius: 50%;
-}
 .income::after {
-  content: "$";
-  left: 21px;
-  top: 15px;
-  color: var(--gold);
-  font-weight: 900;
-  border: 0;
+content: "🛡️";
+left: 14px;
+top: 8px;
+font-size: 24px;
+border: none;
 }
 
 .bio {
