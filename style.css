@@ -424,3 +424,11 @@ footer a { color: var(--soft-gold); }
   .actions .btn, .contact-actions .btn { width: 100%; }
   h1 { letter-spacing: -1px; }
 }
+.service-img img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 20px;
+}
