@@ -402,8 +402,8 @@ footer img {
 
 footer a { color: var(--soft-gold); }
 .service-img img {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   display: block;
   margin-bottom: 20px;
